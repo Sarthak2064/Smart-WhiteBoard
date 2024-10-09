@@ -7,6 +7,7 @@ import InkLayer from "./ink/InkLayer";
 import ShapeLayer from "./shapes/ShapeLayer";
 import ConfirmationDialog from "./ConfirmationDialog";
 import TextLayer from "./text/TextLayer";
+import WebcamFeed from "@/components/webcam/WebcamFeed";
 import { RootState } from "../redux/store";
 import {
   addCanvasObject,
@@ -546,6 +547,7 @@ export default function Canvas() {
         onClose={() => setTextPanelVisible(false)}
         selectedObjectId={selectedObjectId}
       />
+      <WebcamFeed />
     </>
   );
 }
